@@ -86,7 +86,7 @@ body {
 .progress-bar {
   background: linear-gradient(90deg, var(--naranja), var(--amarillo));
   height: 100%;
-  width: 10%; /* Starts at 1/10 */
+  width: 9%; /* Dynamic fallback start width */
   transition: width 0.3s ease-in-out;
 }
 
@@ -500,13 +500,14 @@ footer {
       <button class="tab-btn active" onclick="jumpToSlide(0)">Inicio</button>
       <button class="tab-btn" onclick="jumpToSlide(1)">Madres</button>
       <button class="tab-btn" onclick="jumpToSlide(2)">Bloque 3</button>
-      <button class="tab-btn" onclick="jumpToSlide(3)">Exámenes</button>
-      <button class="tab-btn" onclick="jumpToSlide(4)">MINEDUC</button>
-      <button class="tab-btn" onclick="jumpToSlide(5)">Salidas</button>
-      <button class="tab-btn" onclick="jumpToSlide(6)">Convivencias</button>
-      <button class="tab-btn" onclick="jumpToSlide(7)">Tarea Destacada</button>
-      <button class="tab-btn" onclick="jumpToSlide(8)">Global Exchange</button>
-      <button class="tab-btn" onclick="jumpToSlide(9)">Despedida</button>
+      <button class="tab-btn" onclick="jumpToSlide(3)">Vacaciones</button>
+      <button class="tab-btn" onclick="jumpToSlide(4)">Exámenes</button>
+      <button class="tab-btn" onclick="jumpToSlide(5)">MINEDUC</button>
+      <button class="tab-btn" onclick="jumpToSlide(6)">Salidas</button>
+      <button class="tab-btn" onclick="jumpToSlide(7)">Convivencias</button>
+      <button class="tab-btn" onclick="jumpToSlide(8)">Tarea Destacada</button>
+      <button class="tab-btn" onclick="jumpToSlide(9)">Global Exchange</button>
+      <button class="tab-btn" onclick="jumpToSlide(10)">Despedida</button>
     </nav>
 
     <!-- Slides Container -->
@@ -570,7 +571,27 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 3: EXÁMENES -->
+      <!-- SLIDE 3: VACACIONES DE MEDIO AÑO -->
+      <div class="slide">
+        <span class="tag" style="color: var(--amarillo);">🌴 DESCANSO</span>
+        <h2 class="titulo-slide">Vacaciones de Medio Año</h2>
+        <div class="split-layout">
+          <div class="split-img-container">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Vacaciones de Medio Año" class="split-img">
+          </div>
+          <div class="info-box" style="border-left-color: var(--amarillo);">
+            <h3 style="color:var(--azul); margin-bottom:10px;">¡Tiempo de Recargar Energías!</h3>
+            <p style="font-size:14.5px; font-weight:700; color: var(--naranja);">Del 29 de Junio al 6 de Julio</p>
+            <p class="desc-slide" style="font-size:14.5px; margin-top:15px; margin-bottom: 0; line-height: 1.6;">
+              Querida comunidad Escolaris, les deseamos un feliz y merecido descanso de medio año. <br><br>
+              💻 <strong>Plataforma Escolar activa:</strong> Les informamos que la plataforma continuará abierta y completamente disponible para todos aquellos estudiantes que deseen o necesiten ponerse al día en sus tareas, repasos y contenidos académicos durante este periodo. <br><br>
+              👩‍🏫 <strong>Atención de docentes:</strong> El equipo de maestros y tutores estará disponible para dar seguimiento y resolver cualquier duda académica a partir del <strong>lunes 6 de julio</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: EXÁMENES -->
       <div class="slide">
         <span class="tag">✍️ EVALUACIONES</span>
         <h2 class="titulo-slide">Exámenes de Medio Año</h2>
@@ -588,7 +609,7 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 4: PREPARACIÓN MINEDUC -->
+      <!-- SLIDE 5: PREPARACIÓN MINEDUC -->
       <div class="slide">
         <span class="tag">🏛️ PRUEBAS NACIONALES</span>
         <h2 class="titulo-slide">Preparación para Evaluaciones Diagnósticas</h2>
@@ -607,7 +628,7 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 5: REVIVIENDO MOMENTOS -->
+      <!-- SLIDE 6: REVIVIENDO MOMENTOS -->
       <div class="slide">
         <span class="tag">🎥 EXPERIENCIAS FUERA DEL AULA</span>
         <h2 class="titulo-slide">Visitas Especiales del Mes</h2>
@@ -630,7 +651,7 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 6: CONVIVENCIAS -->
+      <!-- SLIDE 7: CONVIVENCIAS -->
       <div class="slide">
         <span class="tag">🎢 PRÓXIMAMENTE</span>
         <h2 class="titulo-slide">Agenda de Convivencias</h2>
@@ -666,7 +687,7 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 7: TAREA DESTACADA -->
+      <!-- SLIDE 8: TAREA DESTACADA -->
       <div class="slide">
         <span class="tag">⭐ TALENTO DE MAYO</span>
         <h2 class="titulo-slide">Tarea destacada</h2>
@@ -686,7 +707,7 @@ footer {
         </div>
       </div>
 
-      <!-- SLIDE 8: GLOBAL EXCHANGE -->
+      <!-- SLIDE 9: GLOBAL EXCHANGE -->
       <div class="slide">
         <span class="tag">✈️ INTERCAMBIO ACADÉMICO</span>
         <h2 class="titulo-slide">Global Exchange UK 2026</h2>
@@ -703,13 +724,13 @@ footer {
             ¿Deseas conocer más detalles de este programa? Comunícate con nosotros:
           </p>
           <div class="correos-container" style="margin-top: 15px;">
-            <a href="mailto:isaim@escolaris.edu.gt" class="correo-tag">✉️ ipalacios@escolaris.edu.gt</a>
-            <a href="mailto:johanna@escolaris.edu.gt" class="correo-tag">✉️ jgodinez@escolaris.edu.gt</a>
+            <a href="mailto:isaim@escolaris.edu.gt" class="correo-tag">✉️ isaim@escolaris.edu.gt</a>
+            <a href="mailto:johanna@escolaris.edu.gt" class="correo-tag">✉️ johanna@escolaris.edu.gt</a>
           </div>
         </div>
       </div>
 
-      <!-- SLIDE 9: CIERRE (DESPEDIDA) -->
+      <!-- SLIDE 10: CIERRE (DESPEDIDA) -->
       <div class="slide">
         <div style="text-align: center; padding-top: 20px;">
           <div style="margin-bottom: 30px;">
@@ -731,7 +752,7 @@ footer {
     <!-- BOTTOM DECK CONTROLS -->
     <div class="deck-controls">
       <button class="nav-arrow-btn" id="prevBtn" onclick="moveSlide(-1)">◀ Ant.</button>
-      <div class="slide-indicator" id="slideIndicator">Diapositiva 1 de 10</div>
+      <div class="slide-indicator" id="slideIndicator">Diapositiva 1 de 11</div>
       <button class="nav-arrow-btn" id="nextBtn" onclick="moveSlide(1)">Sig. ▶</button>
     </div>
 
@@ -759,7 +780,7 @@ function updateDeck() {
   document.getElementById('pBar').style.width = ((currentSlide + 1) / totalSlides) * 100 + '%';
   
   // Current Slide Title Indicator
-  const titles = ["Inicio", "Madres", "Cierre Bloque 3", "Exámenes Medio Año", "MINEDUC", "Salidas Especiales", "Convivencias", "Tarea Destacada", "Global Exchange", "Despedida"];
+  const titles = ["Inicio", "Madres", "Cierre Bloque 3", "Vacaciones de Medio Año", "Exámenes Medio Año", "MINEDUC", "Salidas Especiales", "Convivencias", "Tarea Destacada", "Global Exchange", "Despedida"];
   document.getElementById('slideIndicator').textContent = `${titles[currentSlide]} (${currentSlide + 1} de ${totalSlides})`;
   
   // Disable Buttons
